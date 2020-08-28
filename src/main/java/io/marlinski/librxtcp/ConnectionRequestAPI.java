@@ -1,6 +1,6 @@
-package io.left.rightmesh.librxtcp;
+package io.marlinski.librxtcp;
 
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Single;
 
 /**
  * ConnectionRequestAPI connects to a TCP ServerAPI.

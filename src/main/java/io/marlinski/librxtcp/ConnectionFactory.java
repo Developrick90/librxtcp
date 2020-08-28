@@ -1,4 +1,4 @@
-package io.left.rightmesh.librxtcp;
+package io.marlinski.librxtcp;
 
 import java.io.IOException;
 

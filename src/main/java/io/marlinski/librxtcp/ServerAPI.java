@@ -1,6 +1,6 @@
-package io.left.rightmesh.librxtcp;
+package io.marlinski.librxtcp;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * A Non-Blocking Reactive TCP ServerAPI using NIOEngine event loop.

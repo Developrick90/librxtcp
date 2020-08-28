@@ -1,4 +1,4 @@
-package io.left.rightmesh.librxtcp;
+package io.marlinski.librxtcp;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Flowable;
+import io.reactivex.rxjava3.core.Flowable;
 
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.fail;

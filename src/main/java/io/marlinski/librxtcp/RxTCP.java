@@ -1,13 +1,4 @@
-package io.left.rightmesh.librxtcp;
-
-import io.reactivex.Completable;
-import io.reactivex.CompletableEmitter;
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.Single;
-import io.reactivex.schedulers.Schedulers;
-import io.reactivex.subscribers.DisposableSubscriber;
+package io.marlinski.librxtcp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -24,6 +15,13 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.locks.ReentrantLock;
+
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableEmitter;
+import io.reactivex.rxjava3.core.Single;
+import io.reactivex.rxjava3.schedulers.Schedulers;
+import io.reactivex.rxjava3.subscribers.DisposableSubscriber;
 
 /**
  * Single-Threaded - Reactive TCP Class.

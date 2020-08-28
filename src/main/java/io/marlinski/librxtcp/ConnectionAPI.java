@@ -1,9 +1,9 @@
-package io.left.rightmesh.librxtcp;
+package io.marlinski.librxtcp;
 
 import java.nio.ByteBuffer;
 
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * Class Connection to send and receive ByteBuffer to a peer over TCP in a reactive way.
