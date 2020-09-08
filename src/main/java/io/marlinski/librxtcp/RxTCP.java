@@ -541,7 +541,9 @@ public class RxTCP {
 
                 // clear the job queue and notify the clients
                 for (JobOrder jobOrder : jobOrderQueue) {
-                    jobOrder.trackOrder.onError(new Throwable("channel has closed"));
+                    if(jobOrder.trackOrder != null) {
+                        jobOrder.trackOrder.onError(new Throwable("channel has closed"));
+                    }
                 }
                 jobOrderQueue.clear();
 
@@ -584,7 +586,6 @@ public class RxTCP {
                         }
                         buffer.flip();
                         s.onNext(buffer.slice());
-
                     } catch (IOException io) { // peer disconnected
                         cleanup();
                         s.onError(io);
@@ -658,7 +659,7 @@ public class RxTCP {
         public class JobHandle implements TrackOrder {
             Flowable<ByteBuffer> job;
             JobOrder order;
-            boolean cancelled = false;
+            boolean cancelled;
 
             public JobHandle(Flowable<ByteBuffer> job) {
                 this.job = job;
